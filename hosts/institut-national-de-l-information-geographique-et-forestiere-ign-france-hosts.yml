@@ -1,0 +1,143 @@
+generated: '2026-10-23'
+method: derived
+source: the pre-flight dossier, apis.yml pointers, spec servers, well-known, vendors -- nothing fetched here
+generator: derive-hosts.py
+summary:
+  hosts: 12
+  own: 12
+  other_domain: 0
+  platform: 0
+  roles:
+  - api
+  - data
+  - other
+  - website
+hosts:
+- host: api.ign.fr
+  found_by:
+  - contract-discovery
+  types: []
+  serves: []
+  registrable_domain: ign.fr
+  role: api
+  relation: own
+- host: boutique.ign.fr
+  found_by:
+  - probed
+  - site-links
+  - contract-discovery
+  - well-known
+  types: []
+  serves: []
+  registrable_domain: ign.fr
+  role: other
+  relation: own
+- host: data.ign.fr
+  found_by:
+  - probed
+  - site-links
+  - namespace-probe
+  types: []
+  serves: []
+  title: data.ign.fr
+  status: 200
+  registrable_domain: ign.fr
+  role: data
+  relation: own
+- host: espace-revendeurs.ign.fr
+  found_by:
+  - probed
+  - site-links
+  - contract-discovery
+  - well-known
+  types: []
+  serves: []
+  registrable_domain: ign.fr
+  role: other
+  relation: own
+- host: espacecollaboratif.ign.fr
+  found_by:
+  - probed
+  - site-links
+  - contract-discovery
+  - well-known
+  types: []
+  serves: []
+  registrable_domain: ign.fr
+  role: other
+  relation: own
+- host: foret.ign.fr
+  found_by:
+  - probed
+  - site-links
+  - well-known
+  types: []
+  serves: []
+  registrable_domain: ign.fr
+  role: other
+  relation: own
+- host: geodesie.ign.fr
+  found_by:
+  - probed
+  - site-links
+  - well-known
+  types: []
+  serves: []
+  registrable_domain: ign.fr
+  role: other
+  relation: own
+- host: inventaire-forestier.ign.fr
+  found_by:
+  - probed
+  - site-links
+  - well-known
+  types: []
+  serves: []
+  registrable_domain: ign.fr
+  role: other
+  relation: own
+- host: macarte.ign.fr
+  found_by:
+  - probed
+  - site-links
+  - well-known
+  types: []
+  serves: []
+  registrable_domain: ign.fr
+  role: other
+  relation: own
+- host: remonterletemps.ign.fr
+  found_by:
+  - probed
+  - site-links
+  types: []
+  serves: []
+  registrable_domain: ign.fr
+  role: other
+  relation: own
+- host: rgp.ign.fr
+  found_by:
+  - probed
+  - site-links
+  types: []
+  serves: []
+  registrable_domain: ign.fr
+  role: other
+  relation: own
+- host: www.ign.fr
+  found_by:
+  - pointer
+  - apis[]
+  - probed
+  - contract-discovery
+  - well-known
+  - vendor-detect
+  types:
+  - Website
+  serves:
+  - docs
+  - cdn
+  vendor: fastly
+  registrable_domain: ign.fr
+  role: website
+  relation: own

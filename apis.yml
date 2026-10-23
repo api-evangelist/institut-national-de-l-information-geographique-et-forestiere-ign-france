@@ -1,24 +1,59 @@
 aid: institut-national-de-l-information-geographique-et-forestiere-ign-france
+
 name: Institut National de l'information geographique et forestiere (IGN - France)
-description: 'Institut National de l''information geographique et forestiere (IGN - France) is a company
-  surfaced via the API Evangelist harvest backlog (source: vc-portfolio) and added to the network as a
-  stub for full-pipeline profiling.'
+
+description: The Institut National de l'Information Géographique et Forestière (IGN) is France's national mapping agency, providing free public
+  access to a wide range of geographic data, maps, and cartographic services. It offers APIs for geospatial data, map tiles, elevation models,
+  and location-based services, supporting developers, researchers, and public administrations in building location-aware applications. The IGN
+  promotes open data, ensuring that geographic information is freely accessible and reusable for societal benefit.
+
 url: https://raw.githubusercontent.com/api-evangelist/institut-national-de-l-information-geographique-et-forestiere-ign-france/refs/heads/main/apis.yml
+
 x-type: company
+
 x-source: harvest:vc-portfolio
-x-tier: stub
-x-tier-reason: harvest
+
+x-tier: profiled
+x-tier-reason: enrichment pass 2026-10-23 (modular-v1; was harvest)
+
 specificationVersion: '0.20'
+
 created: '2026-10-23'
+
 modified: '2026-10-23'
+
 tags:
 - Company
-apis: []
+- Mapping
+- Geospatial
+- Data
+- France
+
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
+
 common:
+- type: Hosts
+  url: hosts/institut-national-de-l-information-geographique-et-forestiere-ign-france-hosts.yml
+- type: Vendors
+  url: vendors/institut-national-de-l-information-geographique-et-forestiere-ign-france-vendors.yml
+- type: DomainSecurity
+  url: security/institut-national-de-l-information-geographique-et-forestiere-ign-france-domain-security.yml
 - type: Website
   url: http://www.ign.fr
+
+apis:
+- name: IGN Geo Services
+  description: Geospatial data and map services provided by IGN, including map tiles, elevation models, and geographic data.
+  humanURL: https://www.ign.fr/particuliers
+  baseURL: null
+  aid: institut-national-de-l-information-geographique-et-forestiere-ign-france:ign-geo-services
+x-enrichment:
+  date: '2026-10-23'
+  status: enriched
+  artifacts_added: 7
+  pass: modular-v1
+  engine: identity=local,contract=local,surfaces=local,docs=local,regulatory=local
